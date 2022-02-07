@@ -152,7 +152,7 @@ a.link-anchor:hover {
 }
 
 .email-container:focus-within .email-svg-default {
-  content: url(/asset/img/mail-focus.svg);
+  content: url(./asset/img/mail-focus.svg);
 }
 
 #email:focus-within {
@@ -167,7 +167,7 @@ a.link-anchor:hover {
 }
 
 .password-container:focus-within .password-svg-default {
-  content: url(/asset/img/lock-focus.svg);
+  content: url(./asset/img/lock-focus.svg);
 }
 
 

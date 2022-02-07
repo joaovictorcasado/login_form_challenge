@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191816;
+  color: #AFB6C2;
+}
+
+
+.img-logo {
+  width: 100%;
+  padding: 40px 0px 0px 40px;
+}
+
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  color: #AFB6C2;
+}
+
+.container-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+
+}
+
+#img-main .img-main {
+  width: 100%;
+  min-height: 512px;
+  max-height: 750px;
+}
+
+form {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 512px;
+  min-width: 400px;
+  background-color: #24221F;
+}
+
+.title-login {
+  margin-bottom: 27px;
+}
+
+.login-svg {
+  position: relative;
+  top: 5px;
+}
+
+.email-svg-default {
+  position: relative;
+  padding: 8px;
+  bottom: 40px;
+}
+
+.password-svg-default {
+  position: relative;
+  bottom: 40px;
+  padding: 8px;
+}
+
+.visible-svg-default {
+  position: relative;
+  left: 260px;
+  bottom: 48px;
+  padding-left: 20px;
+}
+
+.email-container,
+.password-container {
+  margin-bottom: -20px;
+}
+
+#email,
+#password {
+  font-family: 'Roboto', sans-serif;
+  font-size: normal;
+  color: #AFB6C2;
+  width: 100%;
+  height: 44px;
+  padding-left: 35px;
+}
+
+.remember {
+  display: block;
+}
+
+
+.remember-me {
+  color: #AFB6C2;
+  font-size: 1em;
+  padding-left: 10px;
+}
+
+.forget-password {
+  padding-left: 100px;
+}
+
+.buttom-container {
+  text-align: center;
+  margin: 20px 0px 14px;
+}
+
+div h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #D4CCB6;
+}
+
+span {
+  font-family: 'Poppins', sans-serif;
+  color: #FFC632;
+  font-size: 0.9em;
+
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+
+}
+
+input {
+  border: solid 1px #868686;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  background-color: #24221F;
+  border-radius: 5px;
+}
+
+
+input[type=checkbox] {
+  accent-color: #FFC632;
+}
+
+a.link-anchor {
+  color: #FFC632;
+  font-weight: 700;
+}
+
+a.link-anchor:hover {
+  text-decoration: underline;
+  color: #e9b42f;
+}
+
+.email-container:focus-within .email-svg-default {
+  content: url(/asset/img/mail-focus.svg);
+}
+
+#email:focus-within {
+  outline: none;
+  border: 1px solid #FFC632;
+}
+
+#password:focus-within {
+  outline: none;
+  border: 1px solid #FFC632;
+
+}
+
+.password-container:focus-within .password-svg-default {
+  content: url(/asset/img/lock-focus.svg);
+}
+
+
+
+button {
+  font-size: 1.1em;
+  color: #473404;
+  font-weight: 600;
+  background-color: #FFC632;
+  height: 44px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.register {
+  display: block;
+  text-align: center;
+}
+
+
+
+/* @Media Query */
+
+@media (max-width:800px) {
+
+  #img-main {
+    display: none;
+  }
+
+  form {
+
+    width: 80%;
+  }
+
+
+
+
+}
+
+@media (max-width: 500px) {
+  form {
+    display: block;
+    width: 100%;
+    background-color: #191816;
+  }
+
+  .inner-form {
+    margin: 30px 30px;
+
+  }
+
+  .remember {
+    display: block;
+  }
+
+
+  .remember-me {
+    padding-left: 10px;
+  }
+
+  .forget-password {
+    padding-left: 180px;
+  }
+
+  .register {
+    display: block;
+    text-align: center;
+  }
+
+  .visible-svg-default {
+
+    bottom: 48px;
+    padding-left: 90px;
+  }
+
+}
